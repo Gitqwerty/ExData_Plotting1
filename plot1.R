@@ -6,7 +6,7 @@ gap <- epc[,3]
 
 
 hist(gap, xlab ="Global Active Power (kilowatts)", ylab = "Frequency", col = "orangered", main = paste("Global Active Power"))
-axis(side=2, at=seq(0,1200,by=200), labels=seq(0,1200,by=200))
+axis(side=2, at=seq(0,1200, by=200), labels=seq(0,1200, by=200))
 
-dev.copy(png,file="plot1.png")
+dev.copy(png, file = "plot1.png", width = 480, height = 480, units = "px") 
 dev.off()
